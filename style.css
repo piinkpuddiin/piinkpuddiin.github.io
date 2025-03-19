@@ -18,12 +18,31 @@
 /* Navigation bar */
 
 div.sticky {
+    z-index: 15;
+
     position: sticky;
     top: 0;
+    width: 90%;
+    left: 40%;
     background-color: var(--puding-pink);
-    padding: 50px;
+    padding: 20px;
     font-size: 20px;
     border-radius: 10px;
+}
+
+div.logo {
+  top: 0;
+  left: 0;
+}
+
+div.logo:hover {
+    opacity: .6;
+}
+
+div.flex {
+    top: 0.9%;
+    position: sticky;
+    display: flex;
 }
 
 ul {
@@ -34,7 +53,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: inline-start;
 }
 
 li a {
@@ -44,18 +63,20 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  /* Change the link color to #111 (black) on hover */
+
+/* Change the link color to #111 (black) on hover */
 li a:hover {
-background-color: #111;
+    color: #111111;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 /* Main body */
 
 #pink p {
-    width: 1900px;
+    width: 95%;
     height: 450px;
-    background-color: hotpink;
+    background-color: rgb(255, 161, 208);
     border-radius: 16px;
     padding: 10px 10px 10px 10px;
     margin: 0;
@@ -68,7 +89,12 @@ background-color: #111;
     color: var(--light-tertiary-color);
 }
 
-
+#puddinpink {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    border-radius: 50%;
+}
 
 .main {
     margin: 40% 0% 0% 20%;
@@ -93,6 +119,54 @@ background-color: #111;
     margin-bottom: 20px;
 }
 
+
+/* The trigger list/spoiler */
+.main_trigger {
+    margin: 15%;
+    display: flex;
+}
+
+
+.main_trigger .content-wrapper_trigger div {
+    z-index: -6;
+    position: relative;
+
+    font-size: 26px;
+    text-align: center;
+    text-align-last: justify;
+    padding: 40px;
+
+    width: 860px;
+    height: 150px;
+    color: #111111;
+    background: #111111;
+    margin-bottom: 27px;
+}
+
+.main_trigger .content-wrapper_trigger div:hover {
+    background: linear-gradient(45deg, #d6d4d4, #111111);
+}
+
+/* The title of each spoiler*/
+
+.main_trigger .spoiler_title div {
+    z-index: -2;
+
+    pointer-events: none; /*makes it so the mouse dgaf about the box that is already there~*/
+    font-size: 60px;
+    color: #3f1616;
+    font-weight: bold;
+    width: 660px; /*these dimensions need to  be the same as the spoiler box.*/
+    height: 150px;
+
+    margin-bottom: 27px;
+    padding: 40px;
+
+    position: relative;
+    top: -78px;
+    left: -800px;
+    right: 70px;
+}
 
 /* Mobile */
 @media (max-width: 767px) {
