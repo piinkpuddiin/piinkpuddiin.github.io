@@ -128,7 +128,7 @@ li a:hover {
 
 
 .main_trigger .content-wrapper_trigger div {
-    /* z-index: -6; */
+    z-index: 1;
     position: relative;
 
     font-size: 26px;
@@ -150,7 +150,7 @@ li a:hover {
 /* The title of each spoiler*/
 
 .main_trigger .spoiler_title div {
-    /* z-index: -2; */
+    z-index: 2;
 
     pointer-events: none; /*makes it so the mouse dgaf about the box that is already there~*/
     font-size: 60px;
