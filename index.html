@@ -7,10 +7,66 @@
 
   <body>
     <div>
-        <div id="pink">
-            <p>piinkpuddiin</p>
-        </div>
+      <div id="pink">
+        <p>piinkpuddiin</p>
+      </div>
     </div>
-  </body>
 
+    <div class="sticky">
+      <ul>
+        <li><a href="another_page.html">Another Page</a></li>
+        <li><a href="new_page.html">New Page</a></li>
+      </ul>
+    </div>
+
+    <!-- The main part of the website -->
+    <div class="main">
+
+      <div class="main-body">
+        <div class="content-wrapper">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    <!-- Sticky link holder/mini gallery? -->
+      <div class="sidebar">
+        <div class="content-wrapper">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <script>
+      let sidebar = document.getElementsByClassName("sidebar")[0];
+      let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
+
+      window.onscroll = () => {
+        let scrollTop = window.scrollY;
+        let viewportHeight = window.innerHeight;
+        let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+        if(scrollTop >= contentHeight - viewportHeight) {
+          sidebar_content.style.transform = `translateY(-${contentHeight - viewportHeight}px)`;
+          sidebar_content.style.position = "fixed";
+        }
+        else {
+          sidebar_content.style.transform = "";
+          sidebar_content.style.position = "";
+        }
+      }
+    </script> -->
+  </body>
 </html>
