@@ -124,13 +124,26 @@ li a:hover {
 
 /* The trigger list/spoiler */
 
-.trigger_box{
+.flex-column {
     display: flex;
     flex-flow: column;
 }
 
-.trigger_box .content_trigger div {
-    z-index: 1;
+
+.column-item1 {
+    /* flex-basis: 70%;  flex-grow, flex-shrink, flex-basis */
+    margin: 2px;
+    z-index: 2;
+
+    pointer-events: none; /*makes it so the mouse dgaf about the box that is already there~*/
+    font-size: 60px;
+    font-weight: bold;
+
+    color: #3f1616;
+}
+  
+.column-item2 {
+    position: relative;
 
     font-size: 26px;
     text-align: center;
@@ -143,55 +156,92 @@ li a:hover {
     background: #111111;
 }
 
-.trigger_box .content_trigger div:hover {
+.column-item2:hover {
     background: linear-gradient(45deg, #d6d4d4, #111111);
 }
 
-/* The title of each spoiler*/
 
-.side_title .spoiler_title div {
+.right_trig {
+    float: left;
+    width: 40px;
+    margin-left: 670px;
+    margin-top: -43px;
+}
+
+.trigger_title div {
     z-index: 2;
+    position: relative; /*z-index NEEDS a position or it does not work*/
+
+    margin: 2px;
+    margin-bottom: 116px;
 
     pointer-events: none; /*makes it so the mouse dgaf about the box that is already there~*/
     font-size: 60px;
     font-weight: bold;
 
-    color: #3f1616;
-
+    color: #ffffff;
+    width: 860px;
+    height: 150px;
 }
 
-
-.flex-column {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-.column-item {
-    flex: 1 0 61%;  /* flex-grow, flex-shrink, flex-basis */
-    margin: 2px;
-    background-color: lightgreen;
-  }
-  
-.column-item:nth-of-type(4),
-.column-item:nth-of-type(5) {
-    flex-basis: 10%;
+.left_trig {
+    margin-left: 700px;
 }
 
-.flex-column2 {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-.column-item2 {
-    flex: 1 0 61%;  /* flex-grow, flex-shrink, flex-basis */
-    margin: 2px;
-    background-color: rgb(252, 201, 243);
-}
-  
-.column-item3 {
+.trigger_text div {
+    z-index: 1;
     position: relative;
-    left: -50px;
+
+    font-size: 26px;
+    text-align: center;
+    text-align-last: justify;
+
+    padding: 40px;
+    margin-bottom: 36px;
+
+    width: 860px;
+    height: 150px;
+    color: #111111;
+    background: #111111;
 }
+
+.trigger_text div:hover {
+    background: linear-gradient(45deg, #d6d4d4, #111111);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Mobile */
