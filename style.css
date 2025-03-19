@@ -18,7 +18,7 @@
 /* Navigation bar */
 
 div.sticky {
-    z-index: 15;
+    z-index: 3;
 
     position: sticky;
     top: 0;
@@ -40,6 +40,8 @@ div.logo:hover {
 }
 
 div.flex {
+    z-index: 3;
+
     top: 0.9%;
     position: sticky;
     display: flex;
@@ -121,52 +123,76 @@ li a:hover {
 
 
 /* The trigger list/spoiler */
-.main_trigger {
-    margin: 15%;
+
+.trigger_box{
     display: flex;
+    flex-flow: column;
 }
 
-
-.main_trigger .content-wrapper_trigger div {
+.trigger_box .content_trigger div {
     z-index: 1;
-    position: relative;
 
     font-size: 26px;
     text-align: center;
     text-align-last: justify;
     padding: 40px;
 
-    width: 660px;
+    width: 860px;
     height: 150px;
     color: #111111;
     background: #111111;
-    margin-bottom: 27px;
 }
 
-.main_trigger .content-wrapper_trigger div:hover {
+.trigger_box .content_trigger div:hover {
     background: linear-gradient(45deg, #d6d4d4, #111111);
 }
 
 /* The title of each spoiler*/
 
-.main_trigger .spoiler_title div {
+.side_title .spoiler_title div {
     z-index: 2;
 
     pointer-events: none; /*makes it so the mouse dgaf about the box that is already there~*/
     font-size: 60px;
-    color: #3f1616;
     font-weight: bold;
-    width: 660px; /*these dimensions need to  be the same as the spoiler box.*/
-    height: 150px;
 
-    margin-bottom: 27px;
-    padding: 40px;
+    color: #3f1616;
 
-    position: relative;
-    top: -78px;
-    left: -800px;
-    right: 70px;
 }
+
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.column-item {
+    flex: 1 0 61%;  /* flex-grow, flex-shrink, flex-basis */
+    margin: 2px;
+    background-color: lightgreen;
+  }
+  
+.column-item:nth-of-type(4),
+.column-item:nth-of-type(5) {
+    flex-basis: 10%;
+}
+
+.flex-column2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.column-item2 {
+    flex: 1 0 61%;  /* flex-grow, flex-shrink, flex-basis */
+    margin: 2px;
+    background-color: rgb(252, 201, 243);
+}
+  
+.column-item3 {
+    position: relative;
+    left: -50px;
+}
+
 
 /* Mobile */
 @media (max-width: 767px) {
