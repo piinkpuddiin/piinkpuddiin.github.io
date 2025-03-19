@@ -121,14 +121,92 @@ li a:hover {
     margin-bottom: 20px;
 }
 
+/* MARK:CHAPEAU GAME
+
+/* The page for L'Homme Sous Le Chapeau */
+
+.head_intro h1{
+    background: #000000;
+    color: #e7e7e7;
+    padding: 7px;
+    margin: 12px;
+    font-size: 90px;
+    text-align: center;
+}
+
+.head_intro h3,p{
+    background: #000000;
+    color: #e7e7e7;
+    padding: 7px;
+    margin: 12px;
+    text-align: end;
+}
+
+.content_chapeau {
+    margin: 12px;
+    float: left;
+
+    width: 400px;
+    height: 780px;
+
+    background-color: #000000;
+}
+
+.content_chapeau div {
+    color: #e7e7e7;
+}
+
+.homme {
+    margin: 12px;
+    float: right;
+
+    width: 1030px;
+    height: 277px;
+
+    background-color: #000000;
+}
+
+.homme div {
+    color: #e7e7e7;
+}
+
+.sacrifice {
+    margin: 12px;
+    float: left;
+
+    width: 1031px;
+    height: 480px;
+
+    background-color: #000000;
+}
+
+.sacrifice div {
+    color: #e7e7e7;
+}
+
+.spouse {
+    margin: 12px;
+    float: right;
+
+    width: 400px;
+    height: 780px;
+
+    background-color: #000000;
+}
+
+.spouse div {
+    color: #e7e7e7;
+}
 
 /* MARK:TRIGGER WARNINGS
 
 /* The page for the LHSLC trigger warnings */
 
 #trigger_body {
-   background-image:url(piinkpuddiin.png); 
-   contain: none;
+   background-image:url(rita-burza-unsplash.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: cover;
 }
 
 /* The small text paragraph */
@@ -138,7 +216,7 @@ li a:hover {
     text-align: center;
 
     color: #fff;
-    background-color: #111111;
+    background-color: #000000;
 
     width: 420px;
     margin-top: 90px;
@@ -197,18 +275,32 @@ li a:hover {
     width: 860px;
     height: 150px;
     color: #000000af;
-    background-color: #000000da;
-    backdrop-filter: blur(40px);
+    background-color: #000000c4;
+    backdrop-filter: blur(30px);
 }
 
 .trigger_text p {
     filter: blur(6px);
 }
 
-body:has(.trigger_text div:hover) .trigger_text p {
+
+/* The only way I managed to make the text blur and still have the rest unblurred */
+/* There is potentially a better way but it works! */
+body:has(#trig_1:hover) #trig_01 {
     filter: blur(0px);
 }
 
+body:has(#trig_2:hover) #trig_02 {
+    filter: blur(0px);
+}
+
+body:has(#trig_3:hover) #trig_03 {
+    filter: blur(0px);
+}
+
+body:has(#trig_4:hover) #trig_04 {
+    filter: blur(0px);
+}
 
 .trigger_text div:hover {
     -webkit-filter: blur(0px);
@@ -216,22 +308,8 @@ body:has(.trigger_text div:hover) .trigger_text p {
     -o-filter: blur(0px);
     -ms-filter: blur(0px);
     filter: blur(0px);
-    background: linear-gradient(89deg, #d6d4d4, #070707);
+    background: linear-gradient(89deg, #eeeff115, #070707);
     background-size: 180% 180%;
-    animation: gradient-animation 22s ease infinite;
-}
-
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 
