@@ -15,6 +15,7 @@
 }
 
 
+/* MARK: NAV BAR */
 /* Navigation bar */
 
 div.sticky {
@@ -73,6 +74,15 @@ li a:hover {
     border-radius: 10px;
 }
 
+#puddinpink {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+/* MARK:INDEX */
 /* Main body */
 
 #pink p {
@@ -91,12 +101,6 @@ li a:hover {
     color: var(--light-tertiary-color);
 }
 
-#puddinpink {
-    height: 90px;
-    width: 90px;
-    object-fit: contain;
-    border-radius: 50%;
-}
 
 .main {
     margin: 40% 0% 0% 20%;
@@ -147,7 +151,7 @@ li a:hover {
     margin: 12px;
     float: left;
 
-    width: 400px;
+    width: 20%;
     height: 780px;
 
     background-color: #000000;
@@ -159,9 +163,9 @@ li a:hover {
 
 .homme {
     margin: 12px;
-    float: right;
+    float: left;
 
-    width: 1030px;
+    width: 56%;
     height: 277px;
 
     background-color: #000000;
@@ -175,7 +179,7 @@ li a:hover {
     margin: 12px;
     float: left;
 
-    width: 1031px;
+    width: 56%;
     height: 480px;
 
     background-color: #000000;
@@ -189,7 +193,7 @@ li a:hover {
     margin: 12px;
     float: right;
 
-    width: 400px;
+    width: 20%;
     height: 780px;
 
     background-color: #000000;
@@ -332,32 +336,218 @@ body:has(#trig_4:hover) #trig_04 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MARK:MEDIA QUERIES */
 /* Mobile */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+
+    /* MARK:NAV BAR */
+    div.sticky {
+        z-index: 3;
+    
+        position: sticky;
+        top: 0;
+        width: 85%;
+        left: 40%;
+        background-color: #70e798;
     /* Adjusted mobile layout */
-  }
+    }
+
+    .content_chapeau {
+        margin: 1.6%;
+
+        width: 18%;
+        height: 572px;
+    }
+
+    .homme {
+        margin: 1.6%;
+    
+        width: 54%;
+        height: 280px;
+    }
+    
+    .sacrifice {
+        margin: 1.6%;
+    
+        width: 54%;
+        height: 280px;
+    }
+    
+    .spouse {
+        margin: 1.6%;
+
+        width: 18%;
+        height: 572px;
+    }
+}
   
-  /* Tablet */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    /* Tablet layout */ 
-  }
-  
-  /* Desktop */  
-  @media (min-width: 1024px) {
+/* Tablet layout */ 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
+    /* MARK:NAV BAR */
+    div.sticky {
+        z-index: 3;
+    
+        position: sticky;
+        top: 0;
+        width: 85%;
+        left: 40%;
+        background-color: #b41919;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    #puddinpink {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 6%;
+    }
+    
+    
+    div.flex {
+        z-index: 3;
+    
+        top: 0.9%;
+        position: sticky;
+        display: flex;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li a {
+        padding: 14px 26px;
+    }
+    
+    /* MARK:CHAPEAU GAME */
+    .page_intro {
+        margin: 6px;
+    }
+    
+    .page_paragraph {
+        margin: 6px;
+    }
+
+    .content_chapeau {
+        margin: 0.8%;
+
+        width: 17%;
+        height: 572px;
+    }
+
+    .homme {
+        margin: 0.8%;
+    
+        width: 61%;
+        height: 280px;
+    }
+    
+    .sacrifice {
+        margin: 0.8%;
+    
+        width: 61%;
+        height: 280px;
+    }
+    
+    .spouse {
+        margin: 0.8%;
+
+        width: 17%;
+        height: 572px;
+    }
+
+
+}
+
+/* MARK:Desktop */  
+@media screen and (min-width: 1024px) and (max-width: 1850px) {
     /* Desktop layout */
-  }
+    div.sticky {
+        z-index: 3;
+
+        position: sticky;
+        top: 0;
+        width: 91%;
+        left: 40%;
+        background-color: #5484ec;
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+
+    #puddinpink {
+        height: 110px;
+        width: 110px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    
+    div.flex {
+        z-index: 3;
+    
+        top: 0.9%;
+        position: sticky;
+        display: flex;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li a {
+        padding: 14px 26px;
+    }
+    
+    /* MARK:CHAPEAU GAME */
+    .page_intro {
+        margin: 6px;
+    }
+    
+    .page_paragraph {
+        margin: 6px;
+    }
+
+    .content_chapeau {
+        margin: 0.3%;
+        /* margin-left: 50px; */
+
+        width: 21%;
+        height: 772px;
+    }
+
+    .homme {
+        margin: 0.3%;
+    
+        width: 56%;
+        height: 360px;
+    }
+    
+    .sacrifice {
+        margin: 0.3%;
+    
+        width: 56%;
+        height: 400px;
+    }
+    
+    .spouse {
+        margin: 0.3%;
+    
+        width: 21%;
+        height: 772px;
+    
+        background-color: #161616;
+    }
+
+}
