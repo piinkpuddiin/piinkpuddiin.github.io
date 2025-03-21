@@ -27,12 +27,12 @@ div.sticky {
     position: sticky;
 
     top: 0;
-    width: 90%;
+    width: 88%;
     left: 40%;
 
     background-color: var(--puding-pink);
     padding: 20px;
-    font-size: 20px;
+    font-size: 27px;
     border-radius: 10px;
 }
 
@@ -45,12 +45,27 @@ div.logo:hover {
     opacity: .6;
 }
 
-div.flex {
+div.header {
     z-index: 3;
 
     top: 0.9%;
     position: sticky;
     display: flex;
+}
+
+.header a.active {
+    color: #111111;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+div.hamburger_bar {
+    display: none;
+    visibility: hidden;
+}
+
+#hamburger {
+    display: none;
 }
 
 .sticky ul {
@@ -84,6 +99,7 @@ div.flex {
     width: 90px;
     object-fit: contain;
     border-radius: 50%;
+    padding: 7%;
 }
 
 
@@ -346,7 +362,7 @@ body:has(#trig_4:hover) #trig_04 {
 /* MARK:MOBILE */
 
 /* Mobile */
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
 
     /* MARK:NAV BAR */
     div.sticky {
@@ -354,12 +370,33 @@ body:has(#trig_4:hover) #trig_04 {
     
         position: sticky;
         top: 0;
-        width: 85%;
-        left: 40%;
-        background-color: #70e798;
+        width: 69%;
+        left: 38%;
     /* Adjusted mobile layout */
     }
-    
+
+    .sticky li {
+        display: none;
+    }
+
+    #puddinpink {
+        height: 77px;
+        width: 77px;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 8%;
+    }
+
+
+    .hamburger_bar {
+        display: block;
+        background-color:#000000;
+    }    
+
+    #hamburger {
+        display: block;
+    }
+
     /* MARK:CHAPEAU GAME */
 
     .page_intro{
@@ -412,17 +449,30 @@ body:has(#trig_4:hover) #trig_04 {
     
         position: sticky;
         top: 0;
-        width: 85%;
+        width: 81%;
         left: 40%;
-        background-color: #b41919;
+        background-color: #dbaf6d;
         padding: 20px;
-        font-size: 20px;
+        font-size: 24px;
         border-radius: 10px;
     }
     
+    .sticky li {
+        display: none;
+    }
+
+    .hamburger_bar {
+        display: block;
+        background-color:#000000;
+    }    
+
+    #hamburger {
+        display: block;
+    }
+
     #puddinpink {
-        height: 70px;
-        width: 70px;
+        height: 77px;
+        width: 77px;
         object-fit: contain;
         border-radius: 50%;
         padding: 6%;
@@ -487,7 +537,6 @@ body:has(#trig_4:hover) #trig_04 {
         height: 572px;
     }
 
-
 }
 
 /* MARK:Desktop */  
@@ -498,20 +547,21 @@ body:has(#trig_4:hover) #trig_04 {
 
         position: sticky;
         top: 0;
-        width: 91%;
-        left: 40%;
+        width: 85%;
+        left: 34%;
         background-color: #5484ec;
-        padding: 20px;
+        padding: 23px;
         font-size: 25px;
         border-radius: 10px;
     }
 
-
+    
     #puddinpink {
-        height: 110px;
-        width: 110px;
+        height: 85px;
+        width: 85px;
         object-fit: contain;
         border-radius: 50%;
+        padding: 8%;
     }
     
     div.flex {
