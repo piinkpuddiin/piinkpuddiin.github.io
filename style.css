@@ -18,13 +18,18 @@
 /* MARK: NAV BAR */
 /* Navigation bar */
 
+body {
+    background-color: var(--light-tertiary-color);
+}
+
 div.sticky {
     z-index: 3;
-
     position: sticky;
+
     top: 0;
     width: 90%;
     left: 40%;
+
     background-color: var(--puding-pink);
     padding: 20px;
     font-size: 20px;
@@ -48,18 +53,18 @@ div.flex {
     display: flex;
 }
 
-ul {
+.sticky ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
-    float: inline-start;
+.sticky li {
+    float: inline-end;
 }
 
-li a {
+.sticky li a {
     display: block;
     color: white;
     text-align: center;
@@ -68,7 +73,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.sticky li a:hover {
     color: #111111;
     background-color: #fff;
     border-radius: 10px;
@@ -341,7 +346,7 @@ body:has(#trig_4:hover) #trig_04 {
 /* MARK:MOBILE */
 
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media all and (max-width: 480px) {
 
     /* MARK:NAV BAR */
     div.sticky {
@@ -398,7 +403,7 @@ body:has(#trig_4:hover) #trig_04 {
 }
   
 /* Tablet layout */ 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
     
 
     /* MARK:NAV BAR */
@@ -486,7 +491,7 @@ body:has(#trig_4:hover) #trig_04 {
 }
 
 /* MARK:Desktop */  
-@media screen and (min-width: 1024px) and (max-width: 1850px) {
+@media all and (min-width: 1024px) and (max-width: 1280px) {
     /* Desktop layout */
     div.sticky {
         z-index: 3;
