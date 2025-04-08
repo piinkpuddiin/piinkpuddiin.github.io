@@ -170,20 +170,38 @@ div.hamburger_bar {
     height: 550px;
     
     border-radius: 10px;
-    background: linear-gradient(180deg, #fff, var(--link-color));
+    background: linear-gradient(180deg, #000000, #ffffff);
     margin-top: 6%;
     margin-left: 5px;
 }
 
-.main-body .content-wrapper p {
+.main-body .content-wrapper #game_box {
+    background: url(images/ysn.gif);
+    background-size: cover;
+}
+
+.main-body .content-wrapper #blog_box {
+    background: url(images/fake_text.png);
+    background-size: cover;
+}
+
+.main-body .content-wrapper #gallery_box {
+    background: url(images/gallery/Constante_Constamment_Triste_.jpg);
+    background-size: contain;
+    background-position: 90%;
+}
+
+.main-body .content-wrapper #linkylink {
     color: #000000;
-    font-family: BayonRegular;
+    font-family: FunnelSans;
     box-sizing: border-box;
     font-size: 40px;
 
     text-align: center;
+    text-decoration: none;
 
-    background: #00000000;
+    background: #ffffff2a;
+    backdrop-filter: blur(5px);
     box-sizing: border-box;
     margin-top: 495px;
 
@@ -195,11 +213,26 @@ div.hamburger_bar {
     
 }
 
-.main-body .content-wrapper p:hover {
+.main-body .content-wrapper #linkup:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-body .content-wrapper #linkup:visited {
+    color: #000000;
+}
+
+.main-body .content-wrapper #linkylink:hover {
     background: #000000;
     color: #ffffff;
     box-sizing: border-box;
+    text-decoration: underline;
 }
+
+.main-body .content-wrapper #linkup:hover {
+    color: #ffffff;
+}
+
 
 /* MARK:FOOTER
 
