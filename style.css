@@ -19,6 +19,11 @@
     src: url(fonts/FunnelSans-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: BayonRegular;
+    src: url(fonts/Bayon-Regular.ttf);
+}
+
 /* MARK: NAV BAR */
 /* Navigation bar */
 
@@ -118,12 +123,43 @@ div.hamburger_bar {
     margin: 3% 0% 0% 0%;
 }
 
+.banner #title_ban {
+    color: #e7e7e7;
+    font-family: BayonRegular;
+    font-size: 90px;
+    text-align: left;
+    padding-top: 360px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.banner #text_ban {
+    color: #ffffff;
+    font-family: BayonRegular;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    top: -135px;
+    padding-left: 31px;
+
+    background: #00000000;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+
+    transition: background .5s ease;
+}
+
+.banner #text_ban:hover {
+    background: #462bde;
+    color: #000000;
+    box-sizing: border-box;
+}
+
 .main {
     margin: 5% 0% 0% 3%;
     display: flex;
     gap: 20px;
 }
-
 
 .main-body .content-wrapper div {
     display: inline-flex;
@@ -133,6 +169,45 @@ div.hamburger_bar {
     background: linear-gradient(45deg, #fff, var(--link-color));
     margin-bottom: 20px;
     margin-right: 7px;
+}
+
+
+
+/* MARK:FOOTER
+
+/* Everything Footer */
+
+.footer {
+    display: inline;
+    position: absolute;
+
+    top: 130%;
+    left: 0%;
+
+    bottom: auto;
+    background: var(--puding-pink);
+    width: 100%;
+    height: 90px;
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .socials p {
+    color: #161616;
+    text-align: center;
+}
+
+.footer .copyright p {
+    color: #181818;
+    text-align: center;
+}
+
+.footer #svg_icon {
+    width: 30px;
 }
 
 
@@ -166,7 +241,7 @@ div.hamburger_bar {
 /* The page for the LHSLC trigger warnings */
 
 #trigger_body {
-   background-image:url(rita-burza-unsplash.jpg); 
+   background-image:url(images/rings.png); 
    background-repeat: no-repeat;
    background-size: cover;
    object-fit: cover;
