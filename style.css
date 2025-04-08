@@ -112,7 +112,7 @@ div.hamburger_bar {
 /* Main body */
 
 .banner {
-    background: linear-gradient(45deg, #ffffff00, var(--puding-pink));
+    background: url("images/rings.png");
     border-radius: 10px;
     height: 550px;
     margin: 3% 0% 0% 0%;
@@ -121,7 +121,7 @@ div.hamburger_bar {
 .main {
     margin: 5% 0% 0% 3%;
     display: flex;
-    column-gap: 30px;
+    gap: 20px;
 }
 
 
@@ -132,11 +132,9 @@ div.hamburger_bar {
     border-radius: 10px;
     background: linear-gradient(45deg, #fff, var(--link-color));
     margin-bottom: 20px;
+    margin-right: 7px;
 }
 
-.content-wrapper {
-gap: 30px;
-}
 
 /* MARK:CHAPEAU GAME
 
@@ -160,61 +158,8 @@ gap: 30px;
     text-align: end;
 }
 
-.content_chapeau {
-    margin: 0.6%;
-    float: left;
 
-    width: 20%;
-    height: 780px;
 
-    background-color: #000000;
-}
-
-.content_chapeau div {
-    color: #e7e7e7;
-}
-
-.homme {
-    margin: 0.6%;
-    float: left;
-
-    width: 56%;
-    height: 277px;
-
-    background-color: #000000;
-}
-
-.homme div {
-    color: #e7e7e7;
-}
-
-.sacrifice {
-    margin: 0.6%;
-    float: left;
-
-    width: 56%;
-    height: 480px;
-
-    background-color: #000000;
-}
-
-.sacrifice div {
-    color: #e7e7e7;
-}
-
-.spouse {
-    margin: 0.6%;
-    float: right;
-
-    width: 20.3%;
-    height: 780px;
-
-    background-color: #000000;
-}
-
-.spouse div {
-    color: #e7e7e7;
-}
 
 /* MARK:TRIGGER WARNINGS
 
