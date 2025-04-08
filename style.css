@@ -14,6 +14,10 @@
 
 }
 
+@font-face {
+    font-family: FunnelSans;
+    src: url(fonts/FunnelSans-VariableFont_wght.ttf);
+}
 
 /* MARK: NAV BAR */
 /* Navigation bar */
@@ -77,6 +81,7 @@ div.hamburger_bar {
 
 .sticky li {
     float: inline-end;
+    font-family: FunnelSans;
 }
 
 .sticky li a {
@@ -106,44 +111,31 @@ div.hamburger_bar {
 /* MARK:INDEX */
 /* Main body */
 
-#pink p {
-    width: 95%;
-    height: 450px;
-    background-color: rgb(255, 161, 208);
-    border-radius: 16px;
-    padding: 10px 10px 10px 10px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 100px;
-    color: var(--light-tertiary-color);
+.banner {
+    background: linear-gradient(45deg, #ffffff00, var(--puding-pink));
+    border-radius: 10px;
+    height: 550px;
+    margin: 3% 0% 0% 0%;
 }
 
-
 .main {
-    margin: 40% 0% 0% 20%;
+    margin: 5% 0% 0% 3%;
     display: flex;
     column-gap: 30px;
 }
 
-.sidebar .content-wrapper div {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #fff, var(--puding-pink));
-    margin-bottom: 20px;
-}
-
 
 .main-body .content-wrapper div {
-    width: 600px;
-    height: 550px;
+    display: inline-flex;
+    width: 590px;
+    height: 350px;
     border-radius: 10px;
     background: linear-gradient(45deg, #fff, var(--link-color));
     margin-bottom: 20px;
+}
+
+.content-wrapper {
+gap: 30px;
 }
 
 /* MARK:CHAPEAU GAME
