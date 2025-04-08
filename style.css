@@ -158,7 +158,7 @@ div.hamburger_bar {
 .main {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
     display: flex;
     gap: 20px;
 }
@@ -166,17 +166,40 @@ div.hamburger_bar {
 
 .main-body .content-wrapper div {
     display: inline-flex;
-    align-items: last baseline;
     width: 625px;
     height: 550px;
+    
     border-radius: 10px;
-    background: linear-gradient(45deg, #fff, var(--link-color));
+    background: linear-gradient(180deg, #fff, var(--link-color));
     margin-top: 6%;
-    margin-bottom: 5%;
     margin-left: 5px;
 }
 
+.main-body .content-wrapper p {
+    color: #000000;
+    font-family: BayonRegular;
+    box-sizing: border-box;
+    font-size: 40px;
 
+    text-align: center;
+
+    background: #00000000;
+    box-sizing: border-box;
+    margin-top: 495px;
+
+    width: 100%;
+    height: 55px;
+    border-radius: 0px 0px 10px 10px;
+
+    transition: background .5s ease;
+    
+}
+
+.main-body .content-wrapper p:hover {
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}
 
 /* MARK:FOOTER
 
