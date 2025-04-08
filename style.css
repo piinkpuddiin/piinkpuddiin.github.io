@@ -409,6 +409,7 @@ body:has(#trig_4:hover) #trig_04 {
         display: block;
     }
 
+
     /* MARK:CHAPEAU GAME */
 
     .page_intro{
@@ -422,33 +423,6 @@ body:has(#trig_4:hover) #trig_04 {
         margin: 1.2%;
     }
 
-    .content_chapeau {
-        margin: 1.2%;
-
-        width: 20%;
-        height: 280px;
-    }
-
-    .homme {
-        margin: 1.2%;
-    
-        width: 69%;
-        height: 580px;
-    }
-    
-    .sacrifice {
-        margin: 1.2%;
-    
-        width: 75%;
-        height: 280px;
-    }
-    
-    .spouse {
-        margin: 1.2%;
-
-        width: 26%;
-        height: 580px;
-    }
 }
   
 /* Tablet layout */ 
@@ -510,6 +484,41 @@ body:has(#trig_4:hover) #trig_04 {
         padding: 14px 26px;
     }
     
+
+    /* MARK:FOOTER
+
+    /* Everything Footer */
+
+    .footer {
+        display: inline;
+        position: absolute;
+
+        top: 130%;
+        left: 0%;
+
+        bottom: auto;
+        background: var(--puding-pink);
+        width: 100%;
+        height: 160px;
+    }
+
+    .footer .socials {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .footer .copyright p {
+        color: #181818;
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .footer #svg_icon {
+        width: 70px;
+    }
+
     /* MARK:CHAPEAU GAME */
     .page_intro {
         font-size: 40px;
@@ -521,33 +530,6 @@ body:has(#trig_4:hover) #trig_04 {
         margin: 0.8%;
     }
 
-    .content_chapeau {
-        margin: 0.8%;
-
-        width: 17%;
-        height: 572px;
-    }
-
-    .homme {
-        margin: 0.8%;
-    
-        width: 61%;
-        height: 280px;
-    }
-    
-    .sacrifice {
-        margin: 0.8%;
-    
-        width: 61%;
-        height: 280px;
-    }
-    
-    .spouse {
-        margin: 0.8%;
-
-        width: 17%;
-        height: 572px;
-    }
 
 }
 
