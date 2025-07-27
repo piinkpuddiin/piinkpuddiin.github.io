@@ -132,6 +132,7 @@ body {
     color: var(--light-tertiary-color);
 }
 
+
 .blue-side {
     position: fixed;
     background-color: rgb(10, 12, 160);
@@ -142,21 +143,55 @@ body {
     width: 35%;
 }
 
+.behind-name p {
+    position: fixed;
+    top: 0%;
+    left: 16%;
+    color: #e7e7e7;
+    font-size: 120px;
+    font-family: Fraunces;
+}
+
 #my-titles {
     font-family: Fraunces;
     font-size: 50px;
     top: -7%;
 }
 
+
 #intro {
     top: -11%;
 }
 
-#curr-projects {
-    top: -7%;
+
+.curr-projects {
+    margin-top: -2%;
+    height: 48px;
+    background-color: rgb(10, 12, 160);
+    background-size: 100% 10%;
 }
 
 
+.curr-projects p {
+    color: #000000;
+    font-size: 35px;
+    font-family: CardoRegular;
+    line-height: 36px;
+}
+
+
+.links {
+    position: relative;
+    left: 42%;
+}
+
+
+.links img {
+    padding: 2%;
+    width: 4%;
+    height: 4%;
+    filter: invert(1.0);
+}
 
 
 
