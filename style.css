@@ -145,7 +145,7 @@ body {
 
 .behind-name p {
     position: fixed;
-    top: 0%;
+    top: -8px;
     left: 16%;
     color: #e7e7e7;
     font-size: 120px;
@@ -154,49 +154,79 @@ body {
 
 #my-titles {
     font-family: Fraunces;
-    font-size: 50px;
+    font-size: 230%;
     top: -7%;
 }
 
 
 #intro {
-    top: -11%;
+    top: -6%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
-.curr-projects {
-    margin-top: -2%;
-    height: 48px;
+.projects {
+    margin-top: 4%;
+    /* margin-bottom: -4%; */
+    height: 18%;
     background-color: rgb(10, 12, 160);
     background-size: 100% 10%;
 }
 
+.curr-title {
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+}
 
-.curr-projects p {
-    color: #000000;
-    font-size: 35px;
-    font-family: CardoRegular;
-    line-height: 36px;
+.curr-projects {
+    float: right;
+    width: 30%;
+    margin-top: -8px;
+}
+
+.curr-title p {
+    color: #ffffff;
+    font-size: 196%;
+    font-family: CardoBold;
+    top: -33px;
+    left: 62%; /* Makes the text align to the beginning of the blue ah */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.curr-projects a {
+    font-size: 200%;
+    font-family: BayonRegular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
+
+.curr-projects a:hover, a:active {
+    color: #b8bcfa;
+} 
+
+.curr-projects a:link, a:visited {
+    color: #6875ec;
 }
 
 
 .links {
-    position: relative;
+    position: fixed;
     left: 42%;
 }
 
-
 .links img {
-    padding: 2%;
-    width: 4%;
-    height: 4%;
+    padding: 4%;
+    width: 6%;
+    /* height: 6%; */
     filter: invert(1.0);
 }
 
 
-
 /* MARK:TRIGGER WARNINGS
-
 /* The page for the LHSLC trigger warnings */
 
 #trigger_body {
@@ -329,51 +359,159 @@ body:has(#trig_4:hover) #trig_04 {
 
 
 /* MARK:MEDIA QUERIES */
-
-
-/* Phones */
-/* Small Devices */
-/* @media only screen and (min-height : 2000px) { */
-/*     
-    .marquee {
-        right: 16vh;
+/* Tablets */
+@media only screen and (min-width: 651px) and  (max-width: 980px) {
+    #my-titles {
+        font-size: 31px;
+        top: -1%;
+        margin-bottom: 11%;
     }
 
-    .text p {
-        font-size: 200px;
+    .behind-name p {
+        position: fixed;
+        top: 0%;
+        left: 16%;
+        color: #e7e7e7;
+        font-size: 120px;
+        font-family: Fraunces;
+    }
+
+    .landing-page {
+        background-color: rgba(73, 73, 73, 0.24);
+        backdrop-filter: blur(20px);
+        border: 15px double rgb(10, 12, 160);
+        position: fixed;
+        width: 65%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .behind-name p {
+        top: 11%;
+        left: 14%;
+        font-size: 70px;
+    }
+
+    .blue-side {
+        height: 100%;
+        width: 31%;
+    }
+    
+    .projects {
+        margin-top: 4%;
+        height: 122px;
+        background-size: 100% 10%;
+    }
+
+    .curr-title p {
+        font-size: 22px;
+    }
+
+    .curr-projects a {
+        font-size: 22px;
+    }
+    
+    .links {
+        position: fixed;
+        margin-top: 5%;
+        width: 600px;
+        left: -3%;
+    }
+
+    .links img {
+        /* padding: 2%; */
+        width: 7%;
     }
 }
 
 /* Tablets */
-/* @media only screen and (max-height : 1600px) {
+@media only screen and (min-width: 481px) and (max-width: 650px) {
+    #my-titles {
+        font-size: 21px;
+        top: -1%;
+        margin-bottom: 11%;
+    }
+
+    .behind-name p {
+        position: fixed;
+        top: 0%;
+        left: 16%;
+        color: #e7e7e7;
+        font-size: 120px;
+        font-family: Fraunces;
+    }
+
+    .landing-page {
+        position: fixed;
+        width: 65%;
+        height: 50%;
+    }
+
+    .blue-side {
+        height: 100%;
+        width: 31%;
+    }
     
-    .marquee {
-        right: 30vh;
-    }
-
-    .text p {
-        font-size: 240px;
-    }
-} */
-
-/* @media only screen and (min-height : 1601px) and (max-height : 2500) {
-    
-    .marquee {
-        right: 16vh;
-    }
-
-    .text p {
-        font-size: 200px;
+    .projects {
+        height: 70px;
+        background-size: 60% 5%;
     }
 }
 
-@media only screen and (min-height : 2501px){
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+    #my-titles {
+        font-size: 25px;
+        top: -1%;
+        margin-bottom: 11%;
+    }
     
-    .marquee {
-        right: 42vh;
+    .landing-page {
+        position: fixed;
+        width: 75%;
     }
 
-    .text p {
-        font-size: 200px;
+    .behind-name p {
+        top: 16%;
+        left: 8%;
+        font-size: 34px;
     }
-} */
+
+    .blue-side {
+        height: 100%;
+        width: 31%;
+    }
+    
+    .projects {
+        visibility: hidden;
+        margin-top: -11%;
+        height: 92px;
+        background-size: 60% 5%;
+    }
+
+    .curr-title p {
+        visibility: hidden;
+    }
+
+    .curr-projects a {
+        visibility: hidden;
+    }
+
+    #intro {
+        font-size: 19px;
+    }
+
+    .links {
+        position: fixed;
+        margin-top: 5%;
+        width: 200px;
+    }
+
+    .links img {
+        padding: 2%;
+        width: 19%;
+    }
+}
